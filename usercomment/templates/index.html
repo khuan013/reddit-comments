@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reddit Comments</title>
+</head>
+
+<body>
+<h1>Analyze User comments</h1>
+
+
+<h2>Search By City</h2>
+<form action="{% url 'usercomment:index' %}" type="get">
+    <input type="text" name="username" placeholder="username..."/>
+    
+    <input type="submit" value="search" />
+</form>
+</body>
+</html>
+
+<body>
+    
+    RESULT
+    <ul class = "list-group">
+    {% for item in list %}
+        {{ item.0 }},
+    {% endfor %}
+    </ul>
+   
+</body>
+
+
