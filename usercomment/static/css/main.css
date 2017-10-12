@@ -1,0 +1,8 @@
+#myInput		{
+  width:30%;
+  -webkit-transition:width 0.2s ease-in-out;
+}
+#myInput:focus	{
+  width:75%;
+  -webkit-transition:width 0.4s ease-in-out;
+}

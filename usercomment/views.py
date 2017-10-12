@@ -84,8 +84,10 @@ def index(request):
         
         tup = []
         tup.append(str(x.name))
-        tup.append(x.num_comments)
-        #tup.append(x.karma)
+        tup.append(str(x.num_comments))
+        tup.append(str(x.positive))
+        tup.append(str(x.negative))
+        tup.append(x.karma)
         print tup
         resultList.append(tup)
         
